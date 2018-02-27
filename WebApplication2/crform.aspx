@@ -199,7 +199,7 @@
                    Description of change
                 <td class="auto-style2">
                     
-                    <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="322px">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="336px">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
@@ -213,7 +213,7 @@
                 </td>
                 <td class="auto-style2">
                     
-                    <asp:DropDownList ID="DropDownList4" runat="server" Height="16px" Width="322px">
+                    <asp:DropDownList ID="DropDownList4" runat="server" Height="16px" Width="333px">
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>

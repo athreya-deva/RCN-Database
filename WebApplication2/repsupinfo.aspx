@@ -21,7 +21,7 @@
                 Supplier name
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label1" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -29,7 +29,7 @@
                 Supplier Region
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label2" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -37,7 +37,7 @@
                Supplier country
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label3" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -45,7 +45,7 @@
                 Slm
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label4" runat="server"></asp:Label>
              </td>
         </tr>
 

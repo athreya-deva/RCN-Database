@@ -8,43 +8,43 @@
         <tr>
             <td>IPT:</td>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="iptl" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Module:</td>
             <td>
-                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="mod" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Reason for release:</td>
             <td>
-                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="re" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>xxxx:</td>
             <td>
-                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="xx" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Repair Supplier:</td>
             <td>
-                <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label5" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Module part numbers(in):</td>
             <td>
-                <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label6" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Module part numbers(out):</td>
             <td>
-                <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label7" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -62,7 +62,7 @@
         <tr>
             <td>Labour cost (local currency):</td>
             <td>
-                <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label8" runat="server"></asp:Label>
             </td>
         </tr>
        
@@ -75,7 +75,7 @@
         <tr>
             <td>Material cost(local currency):</td>
             <td>
-                <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label9" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@
         <tr>
             <td>Transport cost(local currency):</td>
             <td>
-                <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label10" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>

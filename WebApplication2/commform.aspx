@@ -7,13 +7,13 @@
         <tr>
             <td>RCN NO:</td>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label1" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>RCN Release Date:</td>
             <td>
-                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label2" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -37,7 +37,7 @@
         <tr>
             <td>Serial No:</td>
             <td>
-                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label3" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>

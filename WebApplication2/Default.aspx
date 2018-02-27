@@ -42,7 +42,7 @@
     <asp:BoundField HeaderText = "Date" DataField = "DateSent" />
 </columns>
 </asp:GridView>
-<asp:Label ID="lblMsg1" runat="server" Text="lblMsg1"></asp:Label>
+<asp:Label ID="lblMsg1" runat="server"></asp:Label>
     
   
 </asp:Content>
