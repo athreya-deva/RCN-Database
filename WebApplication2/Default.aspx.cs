@@ -15,10 +15,7 @@ namespace WebApplication2
 {
     public partial class _prdvld : Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void type_SelectedIndexChanged(object sender, EventArgs e)
         {

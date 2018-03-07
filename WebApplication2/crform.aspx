@@ -40,7 +40,7 @@
 
                 runat="server" 
 
-                required="true" AutoCompleteType="Enabled" TextMode="Date" Enabled="False" ReadOnly="True" Width="329px">dd/mm/yy</asp:TextBox>
+                required="true" AutoCompleteType="Enabled" TextMode="Date" Width="329px" OnDataBinding="Page_Load" OnLoad="Page_Load"></asp:TextBox>
 
     </td>
 
