@@ -12,7 +12,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="txtdrrev0" 
+        <asp:TextBox ID="fname" 
 
                 runat="server" 
 
@@ -20,7 +20,7 @@
 
     </td>
     <td>
-        <asp:TextBox ID="TextBox343" 
+        <asp:TextBox ID="lname" 
 
                 runat="server" 
 
@@ -36,11 +36,11 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="txtdrrev" 
+        <asp:TextBox ID="date" 
 
                 runat="server" 
 
-                required="true" AutoCompleteType="Enabled" TextMode="DateTime" Enabled="False" ReadOnly="True" Width="329px">dd/mm/yy</asp:TextBox>
+                required="true" AutoCompleteType="Enabled" TextMode="Date" Enabled="False" ReadOnly="True" Width="329px">dd/mm/yy</asp:TextBox>
 
     </td>
 
@@ -53,7 +53,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="txtppartno" 
+        <asp:TextBox ID="priority" 
 
                 runat="server" 
 
@@ -70,7 +70,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="txtcpartno" 
+        <asp:TextBox ID="module" 
 
                 runat="server" 
 
@@ -87,7 +87,7 @@
 
     <td class="auto-style2">
 
-        <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="347px">
+        <asp:DropDownList ID="reasrelease" runat="server" Height="16px" Width="347px" DataSourceID="DROPDOWN" DataTextField="reasforrelease" DataValueField="reasforrelease">
             <asp:ListItem>!</asp:ListItem>
             <asp:ListItem>!!</asp:ListItem>
         </asp:DropDownList>
@@ -103,7 +103,7 @@
 
     <td class="auto-style2">
 
-        <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="350px">
+        <asp:DropDownList ID="reqtype" runat="server" Height="16px" Width="350px" DataSourceID="DROPDOWN" DataTextField="requesttype" DataValueField="requesttype">
             <asp:ListItem>1</asp:ListItem>
             <asp:ListItem>2</asp:ListItem>
         </asp:DropDownList>
@@ -119,7 +119,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="txtremarks" 
+        <asp:TextBox ID="nlrmno" 
 
         runat="server" required="true" 
 
@@ -136,7 +136,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="Txtdscchange" 
+        <asp:TextBox ID="nlrcpno" 
 
         runat="server" required="true" 
 
@@ -153,7 +153,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="Txtreasrelease" 
+        <asp:TextBox ID="nlrcdesc" 
 
         runat="server" required="true" 
 
@@ -170,7 +170,7 @@
 
     <td class="auto-style2">
 
-        <asp:TextBox ID="Txtpartdesc" 
+        <asp:TextBox ID="nlrrev" 
 
         runat="server" required="true" 
 
@@ -185,7 +185,7 @@
                
                 <td class="auto-style2">
                     
-        <asp:TextBox ID="TextBox1" 
+        <asp:TextBox ID="nlrcuquan" 
 
         runat="server" required="true" 
 
@@ -199,10 +199,11 @@
                    Description of change
                 <td class="auto-style2">
                     
-                    <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="336px">
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                    </asp:DropDownList>
+        <asp:TextBox ID="desc" 
+
+        runat="server" required="true" 
+
+        TextMode="Number" Width="327px"></asp:TextBox>
 
                 </td>
             
@@ -213,7 +214,7 @@
                 </td>
                 <td class="auto-style2">
                     
-                    <asp:DropDownList ID="DropDownList4" runat="server" Height="16px" Width="333px">
+                    <asp:DropDownList ID="stockdisp" runat="server" Height="16px" Width="333px" DataSourceID="DROPDOWN" DataTextField="stockdisposition" DataValueField="stockdisposition">
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
@@ -227,7 +228,7 @@
                 </td>
                 <td class="auto-style2">
                     
-                    <asp:DropDownList ID="DropDownList5" runat="server" Height="16px" Width="322px">
+                    <asp:DropDownList ID="clasification" runat="server" Height="16px" Width="322px" DataSourceID="DROPDOWN" DataTextField="changeclasification" DataValueField="changeclasification">
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
@@ -241,7 +242,7 @@
                 </td>
                 <td class="auto-style3">
                     
-        <asp:TextBox ID="TextBox5" 
+        <asp:TextBox ID="comments" 
 
         runat="server" 
 
@@ -256,7 +257,7 @@
                 </td>
                 <td class="auto-style2">
                     
-        <asp:TextBox ID="TextBox6" 
+        <asp:TextBox ID="remarks" 
 
         runat="server" 
 
@@ -271,7 +272,7 @@
                 </td>
                 <td class="auto-style2">
                     
-        <asp:TextBox ID="TextBox7" 
+        <asp:TextBox ID="approval" 
 
         runat="server" required="true" Width="336px"></asp:TextBox>
 
@@ -281,7 +282,20 @@
                       <asp:Button ID="upld" runat="server" Text="Upload" OnClick="upld_Click" PostBackUrl="~/prodvalid.aspx" />
 
                   </td>
+                 
             
+            </tr>
+            <tr>
+                <td>
+
+                    <asp:SqlDataSource ID="DROPDOWN" runat="server" ConnectionString="<%$ ConnectionStrings:masterdatabase %>" SelectCommand="SELECT * FROM [ddmenu]"></asp:SqlDataSource>
+
+                </td>
+                <td>
+
+                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:masterdatabase %>" SelectCommand="SELECT * FROM [crform]"></asp:SqlDataSource>
+
+                  </td>
             </tr>
                
 

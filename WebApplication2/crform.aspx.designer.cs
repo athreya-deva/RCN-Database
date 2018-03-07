@@ -13,166 +13,166 @@ namespace WebApplication2 {
     public partial class _prdvld {
         
         /// <summary>
-        /// txtdrrev0 control.
+        /// fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdrrev0;
+        protected global::System.Web.UI.WebControls.TextBox fname;
         
         /// <summary>
-        /// TextBox343 control.
+        /// lname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox343;
+        protected global::System.Web.UI.WebControls.TextBox lname;
         
         /// <summary>
-        /// txtdrrev control.
+        /// date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdrrev;
+        protected global::System.Web.UI.WebControls.TextBox date;
         
         /// <summary>
-        /// txtppartno control.
+        /// priority control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtppartno;
+        protected global::System.Web.UI.WebControls.TextBox priority;
         
         /// <summary>
-        /// txtcpartno control.
+        /// module control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcpartno;
+        protected global::System.Web.UI.WebControls.TextBox module;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// reasrelease control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList reasrelease;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// reqtype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList reqtype;
         
         /// <summary>
-        /// txtremarks control.
+        /// nlrmno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtremarks;
+        protected global::System.Web.UI.WebControls.TextBox nlrmno;
         
         /// <summary>
-        /// Txtdscchange control.
+        /// nlrcpno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtdscchange;
+        protected global::System.Web.UI.WebControls.TextBox nlrcpno;
         
         /// <summary>
-        /// Txtreasrelease control.
+        /// nlrcdesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtreasrelease;
+        protected global::System.Web.UI.WebControls.TextBox nlrcdesc;
         
         /// <summary>
-        /// Txtpartdesc control.
+        /// nlrrev control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtpartdesc;
+        protected global::System.Web.UI.WebControls.TextBox nlrrev;
         
         /// <summary>
-        /// TextBox1 control.
+        /// nlrcuquan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox nlrcuquan;
         
         /// <summary>
-        /// DropDownList3 control.
+        /// desc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+        protected global::System.Web.UI.WebControls.TextBox desc;
         
         /// <summary>
-        /// DropDownList4 control.
+        /// stockdisp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.DropDownList stockdisp;
         
         /// <summary>
-        /// DropDownList5 control.
+        /// clasification control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
+        protected global::System.Web.UI.WebControls.DropDownList clasification;
         
         /// <summary>
-        /// TextBox5 control.
+        /// comments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox comments;
         
         /// <summary>
-        /// TextBox6 control.
+        /// remarks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox remarks;
         
         /// <summary>
-        /// TextBox7 control.
+        /// approval control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox approval;
         
         /// <summary>
         /// upld control.
@@ -182,5 +182,23 @@ namespace WebApplication2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button upld;
+        
+        /// <summary>
+        /// DROPDOWN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DROPDOWN;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
