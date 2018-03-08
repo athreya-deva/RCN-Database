@@ -4,7 +4,12 @@
     <table>
     <tr>
         <td>
-           <b>SME Info</b> 
+           <b>SME Info for IPT:</b> 
+        </td>
+        <td>
+
+            <asp:Label ID="lbl1" runat="server"></asp:Label>
+
         </td>
     </tr>
     <tr>

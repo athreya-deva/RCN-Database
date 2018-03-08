@@ -16,7 +16,7 @@
                 <b>Repair Impact</b>
             </td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="dd" runat="server">
                     <asp:ListItem>--select--</asp:ListItem>
                     <asp:ListItem>YES</asp:ListItem>
                     <asp:ListItem>NO</asp:ListItem>
@@ -25,7 +25,7 @@
         </tr>
         <tr>
             <td>
-                <asp:Button ID="gipt" runat="server" Text="Generate IPT" Enabled="False" />
+                <asp:Button ID="gipt" runat="server" Text="Generate IPT" OnClick="gipt_Click" />
             </td>
             <td>
                 <asp:Button ID="close" runat="server" Text="Close" PostBackUrl="~/Default.aspx" />
@@ -34,20 +34,20 @@
         <tr>
             <td>
 
-                <asp:Label ID="Label1" runat="server"></asp:Label>
+                <asp:Label ID="lbl" runat="server"></asp:Label>
 
                 <asp:SqlDataSource ID="gridview" runat="server" ConnectionString="<%$ ConnectionStrings:masterdatabase %>" SelectCommand="SELECT * FROM [crform]"></asp:SqlDataSource>
 
             </td>
             <td>
-                <asp:Button ID="sme" runat="server" Text="Trigger to SME" PostBackUrl="~/sme.aspx" />
+                <asp:Button ID="sme" runat="server" Text="Trigger to SME" OnClick="sme_Click" />
             </td>
         </tr>
     </table>
     </asp:Content>
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent2">
     <div class="GridDock" id="dvGridWidth">
-    <asp:GridView ID="grid1" runat="server">
+    <asp:GridView ID="grid1" runat="server" AutoGenerateColumns="False" >
         <AlternatingRowStyle BackColor="White" />
         <columns>
             <asp:TemplateField HeaderText="First name">

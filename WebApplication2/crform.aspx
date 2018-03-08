@@ -24,7 +24,7 @@
 
                 runat="server" 
 
-                required="true" AutoCompleteType="Enabled" Width="323px">Last Name</asp:TextBox></td>
+                required="true" AutoCompleteType="Enabled" Width="323px" >Last Name</asp:TextBox></td>
 
 </tr>
 
