@@ -22,21 +22,7 @@ namespace WebApplication2
     { 
          protected void Page_Load(object sender, EventArgs e)
          {
-            try
-            {
-
-                DateTime dNow = DateTime.Now;
-
-               
-               
-                date.Text = (dNow.ToString("dd-MM-yyyy"));
-            }
-            catch (Exception ex)
-            {
-                Response.Write("error" + ex.ToString());
-
-            }
-
+           
          }
           
     
@@ -47,6 +33,7 @@ namespace WebApplication2
 
             try
             {
+                date.Text = DateTime.Now.ToShortDateString();
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["masterdatabase"].ConnectionString);
                 conn.Open();
                 string insertQuery = "insert into [crform] (fname,lname,date,priority,module,reasrelease,reqtype,nlrmno,nlrcpno,nlrdesc,nlrcrev,nlrcusagequan,desc,stock,changeclasification,comments,remarks,approval) values (@fname,@lname,@date,@priority,@module,@reasrelease,@reqtype,@nlrmno,@nlrcpno,@nlrdesc,@nlrcrev,@nlrcusagequan,@desc,@stock,@changeclasification,@comments,@remarks,@approval)";
