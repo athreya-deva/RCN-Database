@@ -74,7 +74,7 @@
 
                 runat="server" 
 
-                required="true" TextMode="Number" Width="333px"></asp:TextBox>
+                required="true" Width="333px"></asp:TextBox>
 
     </td>
 
@@ -88,8 +88,6 @@
     <td class="auto-style2">
 
         <asp:DropDownList ID="reasrelease" runat="server" Height="16px" Width="347px" DataSourceID="DROPDOWN" DataTextField="reasforrelease" DataValueField="reasforrelease">
-            <asp:ListItem>!</asp:ListItem>
-            <asp:ListItem>!!</asp:ListItem>
         </asp:DropDownList>
 
     </td>
@@ -104,8 +102,6 @@
     <td class="auto-style2">
 
         <asp:DropDownList ID="reqtype" runat="server" Height="16px" Width="350px" DataSourceID="DROPDOWN" DataTextField="requesttype" DataValueField="requesttype">
-            <asp:ListItem>1</asp:ListItem>
-            <asp:ListItem>2</asp:ListItem>
         </asp:DropDownList>
 
     </td>
@@ -172,9 +168,7 @@
 
         <asp:TextBox ID="nlrrev" 
 
-        runat="server" required="true" 
-
-        TextMode="Number" Width="332px"></asp:TextBox>
+        runat="server" required="true" Width="332px"></asp:TextBox>
 
     </td>
                 </tr>
@@ -187,9 +181,7 @@
                     
         <asp:TextBox ID="nlrcuquan" 
 
-        runat="server" required="true" 
-
-        TextMode="Number" Width="327px"></asp:TextBox>
+        runat="server" required="true" Width="327px"></asp:TextBox>
 
                 </td>
             
@@ -201,9 +193,7 @@
                     
         <asp:TextBox ID="desc" 
 
-        runat="server" required="true" 
-
-        TextMode="Number" Width="327px"></asp:TextBox>
+        runat="server" required="true" Width="327px"></asp:TextBox>
 
                 </td>
             
@@ -215,8 +205,6 @@
                 <td class="auto-style2">
                     
                     <asp:DropDownList ID="stockdisp" runat="server" Height="16px" Width="333px" DataSourceID="DROPDOWN" DataTextField="stockdisposition" DataValueField="stockdisposition">
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
 
                 </td>
@@ -229,8 +217,6 @@
                 <td class="auto-style2">
                     
                     <asp:DropDownList ID="clasification" runat="server" Height="16px" Width="322px" DataSourceID="DROPDOWN" DataTextField="changeclasification" DataValueField="changeclasification">
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
 
                 </td>
