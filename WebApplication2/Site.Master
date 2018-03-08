@@ -12,6 +12,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <script language="javascript" type="text/javascript" src="../Scripts/jquery-1.4.1.js"></script>
 </head>
 <body>
     <form runat="server">

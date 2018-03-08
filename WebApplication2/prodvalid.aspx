@@ -1,5 +1,15 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="prodvalid.aspx.cs" Inherits="WebApplication2.prodvalid" %>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <style type="text/css">
+    .GridDock
+    {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 200px;
+        padding: 0 0 17px 0;
+    }
+</style>
+    <div id="dvScreenWidth" visible="false"></div> 
     <table>
         <tr>
             <td>
@@ -36,6 +46,7 @@
     </table>
     </asp:Content>
 <asp:Content runat="server" ID="Content1" ContentPlaceHolderID="MainContent2">
+    <div class="GridDock" id="dvGridWidth">
     <asp:GridView ID="grid1" runat="server">
         <AlternatingRowStyle BackColor="White" />
         <columns>
@@ -136,4 +147,10 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
+        </div> 
+    <script type="text/javascript">
+    $(document).ready(function() {
+       $('#dvGridWidth').width($('#dvScreenWidth').width());
+    });
+</script>
 </asp:Content>
