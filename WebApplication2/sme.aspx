@@ -18,7 +18,7 @@
         </td>
         <td>
 
-            <asp:DropDownList ID="newpart" runat="server">
+            <asp:DropDownList ID="newpart" runat="server" DataSourceID="SqlDataSource1" DataTextField="newpart" DataValueField="newpart">
                 <asp:ListItem Value="1"></asp:ListItem>
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem></asp:ListItem>
@@ -32,7 +32,7 @@
         </td>
         <td>
 
-            <asp:DropDownList ID="oldpart" runat="server">
+            <asp:DropDownList ID="oldpart" runat="server" DataSourceID="SqlDataSource1" DataTextField="oldpart" DataValueField="oldpart">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>1</asp:ListItem>
             </asp:DropDownList>
@@ -40,7 +40,8 @@
         </td>
     </tr>
     <tr>
-        <td> Buy part no</td>
+        <td> Buy part no<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:masterdatabase %>" SelectCommand="SELECT * FROM [ddmenu]"></asp:SqlDataSource>
+        </td>
         <td>
             <asp:TextBox ID="buypart" runat="server"></asp:TextBox>
         </td>
