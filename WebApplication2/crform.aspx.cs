@@ -22,14 +22,46 @@ namespace WebApplication2
     { 
          protected void Page_Load(object sender, EventArgs e)
          {
-           
-         }
+
+            SmtpClient client = new SmtpClient();
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.EnableSsl = true;
+            client.Host = "smtp.gmail.com";
+            client.Port = 587;
+
+            // setup Smtp authentication
+            System.Net.NetworkCredential credentials =
+                new System.Net.NetworkCredential("athreya.deva@gmail.com", "9865277943");
+            client.UseDefaultCredentials = false;
+            client.Credentials = credentials;
+
+            MailMessage msg = new MailMessage();
+            msg.From = new MailAddress("athreya.deva@gmail.com");
+            msg.To.Add(new MailAddress("devanathan4444@gmail.com"));
+
+            msg.Subject = "This is a test Email subject";
+            msg.IsBodyHtml = true;
+            msg.Body = string.Format("<html><head></head><body><b>Test HTML Email<br>ASP INTEGRATED MAIL</b></body>");
+
+            try
+            {
+                client.Send(msg);
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("error" + ex.ToString());
+
+
+            }
+
+        }
           
     
 
         protected void upld_Click(object sender, EventArgs e)
         {
-          
+
 
             try
             {
@@ -59,7 +91,8 @@ namespace WebApplication2
 
 
                 cmd.ExecuteNonQuery();
-              
+                
+
             }
             catch (Exception ex)
             {
