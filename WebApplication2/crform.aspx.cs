@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
-using System.Data;
 using System.Net;
 using OpenPop.Pop3;
 using OpenPop.Mime;
@@ -14,6 +13,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Configuration;
+using System.Data;
 
 
 namespace WebApplication2

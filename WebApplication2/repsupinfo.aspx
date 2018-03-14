@@ -10,10 +10,15 @@
                 Repair Supplier Code
             </td>
             <td class="auto-style1">
-                <asp:DropDownList ID="DropDownList1" runat="server" Width="357px">
+                <asp:DropDownList ID="repsupcode" runat="server" Width="357px" AutoPostBack="True" DataSourceID="repsup" DataTextField="code" DataValueField="code" OnSelectedIndexChanged="repsupcode_SelectedIndexChanged">
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>32</asp:ListItem>
                 </asp:DropDownList>
+            </td>
+            <td>
+
+                <asp:SqlDataSource ID="repsup" runat="server" ConnectionString="<%$ ConnectionStrings:masterdatabase %>" SelectCommand="SELECT * FROM [repsupinfo]"></asp:SqlDataSource>
+
             </td>
         </tr>
          <tr>
@@ -21,7 +26,7 @@
                 Supplier name
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label1" runat="server"></asp:Label>
+                <asp:Label ID="name" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -29,7 +34,7 @@
                 Supplier Region
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label2" runat="server"></asp:Label>
+                <asp:Label ID="region" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -37,7 +42,7 @@
                Supplier country
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label3" runat="server"></asp:Label>
+                <asp:Label ID="country" runat="server"></asp:Label>
              </td>
         </tr>
          <tr>
@@ -45,7 +50,7 @@
                 Slm
             </td>
             <td class="auto-style1">
-                <asp:Label ID="Label4" runat="server"></asp:Label>
+                <asp:Label ID="slm" runat="server"></asp:Label>
              </td>
         </tr>
 
