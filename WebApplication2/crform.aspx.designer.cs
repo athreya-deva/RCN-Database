@@ -121,13 +121,13 @@ namespace WebApplication2 {
         protected global::System.Web.UI.WebControls.TextBox nlrcuquan;
         
         /// <summary>
-        /// desc control.
+        /// descr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox desc;
+        protected global::System.Web.UI.WebControls.TextBox descr;
         
         /// <summary>
         /// stockdisp control.

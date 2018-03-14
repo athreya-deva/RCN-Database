@@ -107,7 +107,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Desription">
                 <ItemTemplate>
-                    <asp:Label ID="desc" runat="server" Text='<%#Bind("desc") %>'></asp:Label>
+                    <asp:Label ID="desc" runat="server" Text='<%#Bind("descr") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Stock disposition">

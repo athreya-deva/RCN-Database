@@ -65,33 +65,32 @@ namespace WebApplication2
 
             try
             {
-                date.Text = DateTime.Now.ToShortDateString();
+                date.Text = "14-Mar-2018";
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["masterdatabase"].ConnectionString);
                 conn.Open();
-                string insertQuery = "insert into [crform] (fname,lname,date,priority,module,reasrelease,reqtype,nlrmno,nlrcpno,nlrdesc,nlrcrev,nlrcusagequan,desc,stock,changeclasification,comments,remarks,approval) values (@fname,@lname,@date,@priority,@module,@reasrelease,@reqtype,@nlrmno,@nlrcpno,@nlrdesc,@nlrcrev,@nlrcusagequan,@desc,@stock,@changeclasification,@comments,@remarks,@approval)";
+                string insertQuery = "insert into [crform] (fname,lname,date,priority,module,reasrelease,reqtype,nlrmno,nlrcpno,nlrcdesc,nlrcrev,nlrcusagequan,descr,stock,changeclasification,comments,remarks,approval) values (@fname,@lname,@date,@priority,@module,@reasrelease,@reqtype,@nlrmno,@nlrcpno,@nlrcdesc,@nlrcrev,@nlrcusagequan,@descr,@stock,@changeclasification,@comments,@remarks,@approval)";
                 SqlCommand cmd = new SqlCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@fname", SqlDbType.NVarChar).Value = fname.Text;
-                cmd.Parameters.AddWithValue("@lname", SqlDbType.NVarChar).Value = lname.Text;
-                cmd.Parameters.AddWithValue("@date", SqlDbType.Date).Value = date.Text;
-                cmd.Parameters.AddWithValue("@priority", SqlDbType.Int).Value = priority.Text;
-                cmd.Parameters.AddWithValue("@module", SqlDbType.NVarChar).Value = module.Text;
-                cmd.Parameters.AddWithValue("@reasrelease", reasrelease.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@reqtype", reqtype.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@nlrmno", SqlDbType.Int).Value = nlrmno.Text;
-                cmd.Parameters.AddWithValue("@nlrcpno", SqlDbType.Int).Value = nlrcpno.Text;
-                cmd.Parameters.AddWithValue("@nlrdesc", SqlDbType.NVarChar).Value = nlrcdesc.Text;
-                cmd.Parameters.AddWithValue("@nlrcrev", SqlDbType.NVarChar).Value = nlrrev.Text;
-                cmd.Parameters.AddWithValue("@nlrcusagequan", SqlDbType.NVarChar).Value = nlrcuquan.Text;
-                cmd.Parameters.AddWithValue("@desc", SqlDbType.NVarChar).Value = desc.Text;
-                cmd.Parameters.AddWithValue("@stock", stockdisp.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@changeclasification", clasification.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@comments", SqlDbType.Text).Value = comments.Text;
-                cmd.Parameters.AddWithValue("@remarks", SqlDbType.Text).Value = remarks.Text;
-                cmd.Parameters.AddWithValue("@approval", SqlDbType.NVarChar).Value = approval.Text;
-
-
+                cmd.Parameters.AddWithValue("fname", SqlDbType.NVarChar).Value = fname.Text;
+                cmd.Parameters.AddWithValue("lname", SqlDbType.NVarChar).Value = lname.Text;
+                cmd.Parameters.AddWithValue("date", SqlDbType.Date).Value = date.Text;
+                cmd.Parameters.AddWithValue("priority", SqlDbType.Int).Value = priority.Text;
+                cmd.Parameters.AddWithValue("module", SqlDbType.NVarChar).Value = module.Text;
+                cmd.Parameters.AddWithValue("reasrelease", reasrelease.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("reqtype", reqtype.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("nlrmno", SqlDbType.Int).Value = nlrmno.Text;
+                cmd.Parameters.AddWithValue("nlrcpno", SqlDbType.Int).Value = nlrcpno.Text;
+                cmd.Parameters.AddWithValue("nlrcdesc", SqlDbType.NVarChar).Value = nlrcdesc.Text;
+                cmd.Parameters.AddWithValue("nlrcrev", SqlDbType.NVarChar).Value = nlrrev.Text;
+                cmd.Parameters.AddWithValue("nlrcusagequan", SqlDbType.NVarChar).Value = nlrcuquan.Text;
+                cmd.Parameters.AddWithValue("descr", SqlDbType.NVarChar).Value = descr.Text;
+                cmd.Parameters.AddWithValue("stock", stockdisp.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("changeclasification", clasification.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("comments", SqlDbType.Text).Value = comments.Text;
+                cmd.Parameters.AddWithValue("remarks", SqlDbType.Text).Value = remarks.Text;
+                cmd.Parameters.AddWithValue("approval", SqlDbType.NVarChar).Value = approval.Text;
                 cmd.ExecuteNonQuery();
-                
+                Response.Redirect("prodvalid.aspx");
+                upld.PostBackUrl = "~/prodvalid.aspx";
 
             }
             catch (Exception ex)

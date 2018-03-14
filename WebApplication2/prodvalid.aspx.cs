@@ -46,6 +46,7 @@ namespace WebApplication2
                     otp += character;
                 }
                 lbl.Text = "Generated ITP is" + otp;
+                close.Enabled = false;
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["masterdatabase"].ConnectionString);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("select * from [crform] ", con);

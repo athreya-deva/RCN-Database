@@ -40,7 +40,7 @@
 
                 runat="server" 
 
-                required="true" AutoCompleteType="Enabled" TextMode="Date" Width="329px" OnDataBinding="Page_Load" OnLoad="Page_Load"></asp:TextBox>
+                required="true" TextMode="Date" Width="329px" OnDataBinding="Page_Load" OnLoad="Page_Load"></asp:TextBox>
 
     </td>
 
@@ -191,7 +191,7 @@
                    Description of change
                 <td class="auto-style2">
                     
-        <asp:TextBox ID="desc" 
+        <asp:TextBox ID="descr" 
 
         runat="server" required="true" Width="327px"></asp:TextBox>
 
@@ -265,7 +265,7 @@
                 </td>
                   <td>
 
-                      <asp:Button ID="upld" runat="server" Text="Upload" OnClick="upld_Click" PostBackUrl="~/prodvalid.aspx" />
+                      <asp:Button ID="upld" runat="server" Text="Upload" OnClick="upld_Click"  />
 
                   </td>
                  

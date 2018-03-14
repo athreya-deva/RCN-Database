@@ -11,8 +11,6 @@
             </td>
             <td class="auto-style1">
                 <asp:DropDownList ID="repsupcode" runat="server" Width="357px" AutoPostBack="True" DataSourceID="repsup" DataTextField="code" DataValueField="code" OnSelectedIndexChanged="repsupcode_SelectedIndexChanged">
-                    <asp:ListItem>2</asp:ListItem>
-                    <asp:ListItem>32</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>
