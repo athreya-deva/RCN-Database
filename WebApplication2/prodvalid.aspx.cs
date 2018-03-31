@@ -18,9 +18,17 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
             sme.Enabled = false;
-        
-            
-           
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["masterdatabase"].ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from [crform] ", con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            grid1.DataSource = rdr;
+            grid1.DataBind();
+
+            con.Close();
+
+
+
         }
 
         protected void gipt_Click(object sender, EventArgs e)
@@ -47,14 +55,7 @@ namespace WebApplication2
                 }
                 lbl.Text = "Generated ITP is" + otp;
                 close.Enabled = false;
-                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["masterdatabase"].ConnectionString);
-                con.Open();
-                SqlCommand cmd = new SqlCommand("select * from [crform] ", con);
-                SqlDataReader rdr = cmd.ExecuteReader();
-                grid1.DataSource = rdr;
-                grid1.DataBind();
                 
-                con.Close();
                 sme.Enabled = true;
               
 

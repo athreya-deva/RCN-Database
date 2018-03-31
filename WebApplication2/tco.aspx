@@ -50,13 +50,13 @@
         <tr>
             <td>Annual income:</td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" required="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>Labour cost(usd):</td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" required="true"></asp:TextBox>
             </td>
         </tr>
         <tr>
