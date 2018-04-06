@@ -8,7 +8,7 @@
         <tr>
             <td>IPT:</td>
             <td>
-                <asp:Label ID="iptl" runat="server"></asp:Label>
+                <asp:Label ID="ipt" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
@@ -56,38 +56,38 @@
         <tr>
             <td>Labour cost(usd):</td>
             <td>
-                <asp:TextBox ID="TextBox2" runat="server" required="true"></asp:TextBox>
+                <asp:TextBox ID="lcost" runat="server" required="true" AutoCompleteType="Disabled" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox2_TextChanged" TextMode="Number" ToolTip="$$$$"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>Labour cost (local currency):</td>
             <td>
-                <asp:Label ID="Label8" runat="server"></asp:Label>
+                <asp:Label ID="lcosti" runat="server"></asp:Label>
             </td>
         </tr>
        
         <tr>
             <td>Material cost(usd):</td>
             <td>
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                <asp:TextBox ID="mcost" runat="server" AutoPostBack="True" OnTextChanged="mcost_TextChanged" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>Material cost(local currency):</td>
             <td>
-                <asp:Label ID="Label9" runat="server"></asp:Label>
+                <asp:Label ID="mcosti" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>Transport cost(usd):</td>
             <td>
-                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tcost" runat="server" AutoPostBack="True" OnTextChanged="tcost_TextChanged" TextMode="Number"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>Transport cost(local currency):</td>
             <td>
-                <asp:Label ID="Label10" runat="server"></asp:Label>
+                <asp:Label ID="tcosti" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>

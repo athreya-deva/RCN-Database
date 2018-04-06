@@ -44,6 +44,9 @@
     <Reference Include="OpenPop">
       <HintPath>..\..\..\..\mail library\OpenPop.NET 2.0.5\OpenPop.NET 2.0.5\binaries\signed (strong name)\OpenPop.dll</HintPath>
     </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\PDFsharp-MigraDocFoundation-1_50-beta5\PDFsharp\src\PdfSharp\obj\Debug\PdfSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -199,6 +202,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="converter.asmx" />
     <Content Include="crform.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
@@ -310,6 +314,10 @@
     <Compile Include="commform.aspx.designer.cs">
       <DependentUpon>commform.aspx</DependentUpon>
     </Compile>
+    <Compile Include="converter.asmx.cs">
+      <DependentUpon>converter.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="crform.aspx.cs">
       <DependentUpon>crform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,6 +406,9 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
